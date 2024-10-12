@@ -253,5 +253,16 @@
   </joint>
   <link name="camera_depth_optical_frame"/>
 
+<gazebo>
+  <plugin name="odom_publisher" filename="libgazebo_ros_p3d.so">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>50</updateRate>
+    <bodyName>base_link</bodyName>
+    <topicName>/odom</topicName>
+    <frameName>odom</frameName>
+  </plugin>
+</gazebo>
+</robot>
+
 
 </robot>
